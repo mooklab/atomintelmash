@@ -1,0 +1,157 @@
+footer
+    background-color: #003274
+    color: white
+    border-top-right-radius: 100px
+    +screen(l)
+        border-top-left-radius: 40px
+        border-top-right-radius: 40px
+        font-size: 12px
+        line-height: 22px
+
+    div.top
+        display: grid
+        grid-template-columns: 3fr 4fr 5fr
+        grid-gap: 24px
+        padding-top: 53px
+        padding-bottom: 61px
+        +screen(l)
+            padding-top: 30px
+            padding-bottom: 25px
+            grid-template-columns: max-content 4fr 3fr
+            grid-gap: 38px
+        +screen(s)
+            grid-template-columns: 1fr
+
+
+        a.logotype
+            position: relative
+            top: -53px
+            display: grid
+            align-items: center
+            justify-items: center
+            width: 128px
+            height: 128px
+            background-color: #025EA1
+            border-bottom-left-radius: 16px
+            border-bottom-right-radius: 16px
+            +screen(l)
+                top: -30px
+                width: 52px
+                height: 52px
+                border-bottom-left-radius: 8px
+                border-bottom-right-radius: 8px
+            +screen(s)
+                margin-left: 18px
+            
+            img
+                +screen(l)
+                    width: 34px
+
+        menu
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 37px 48px
+            +screen(l)
+                grid-gap: 8px 33px
+            a
+                white-space: nowrap
+
+        div.subscribe
+            margin-left: 130px
+            +screen(l)
+                margin-left: 13px
+            +screen(s)
+                margin-left: unset
+
+            span
+                display: block
+                margin-bottom: 22px
+                +screen(l)
+                    margin-bottom: 8px
+
+            form
+                display: grid
+                grid-template-columns: 1fr max-content
+                grid-gap: 12px
+                +screen(l)
+                    grid-template-columns: 1fr
+                    grid-gap: 14px
+
+                input
+                    max-height: 40px
+                    border: 1px solid #0A6FB8
+                    padding: 15px 24px
+                    border-radius: 999px
+                    &::placeholder
+                        font-size: 14px
+                        line-height: 10px
+                        letter-spacing: 0.02em
+                        text-transform: uppercase
+                        color: #0a6fb8
+                        overflow: visible
+
+                button
+                    background-color: #fd6925
+                    padding: 15px 24px
+                    border-radius: 999px
+                    font-size: 14px
+                    line-height: 10px
+                    letter-spacing: 0.02em
+                    text-transform: uppercase
+                    color: white
+                    +screen(l)
+                        justify-self: start
+
+    div.bottom
+        display: grid
+        grid-template-columns: 5fr 5fr 1fr
+        grid-gap: 24px
+        padding-top: 53px
+        padding-bottom: 58px
+        border-top: 1px solid #094696
+        +screen(l)
+            padding-top: 31px
+            padding-bottom: 18px
+        +screen(s)
+            padding-top: 14px
+            padding-bottom: 29px
+            grid-template-columns: 1fr
+            grid-gap: 10px
+
+        a.developed
+            display: grid
+            align-items: center
+            justify-content: end
+            grid-template-columns: repeat(2, max-content)
+            grid-gap: 12px
+            +screen(s)
+                justify-content: start
+    
+    div.background
+        position: absolute
+        bottom: 0px
+        left: 50%
+        margin-left: -1500px
+        z-index: -2
+        +screen(l)
+            margin-left: -620px
+        +screen(s)
+            margin-left: -360px
+            bottom: 350px
+
+        img.desktop
+            display: block
+            +screen(l)
+                display: none
+
+        img.tablet
+            display: none
+            +screen(l)
+                display: block
+            +screen(s)
+                display: none
+
+        img.mobile
+            display: none
+            +screen(s)
+                display: block

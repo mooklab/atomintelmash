@@ -1,0 +1,101 @@
+section.projects
+    margin-top: 100px
+    margin-bottom: 88px
+    +screen(l)
+        margin-top: 75px
+        margin-bottom: 75px
+    +screen(s)
+        margin-top: 50px
+        margin-bottom: 35px
+
+    div.container
+        display: grid
+        grid-gap: 11px
+
+    h2
+        font-weight: 700
+        font-size: 50px
+        line-height: 56px
+        letter-spacing: 0.02em
+        text-transform: uppercase
+        +screen(l)
+            font-size: 24px
+            line-height: 26px
+        +screen(s)
+            font-size: 16px
+            line-height: 19px
+
+    div.swiper
+        width: 100%
+        min-width: 0
+        overflow: visible
+        margin-top: 56px
+        +screen(l)
+            margin-top: unset
+
+        div.swiper-slide
+            opacity: 0
+            margin-top: 0
+            pointer-events: none
+            transition: all .3s
+            height: auto !important
+
+        div.swiper-slide-visible
+            opacity: 1
+            pointer-events: auto
+
+        div.swiper-slide-next
+            margin-top: -56px
+            +screen(l)
+                margin-top: unset
+    
+    div.navigation
+
+        div.swiper-scrollbar
+            background-color: #0077D1
+
+            div.swiper-scrollbar-drag
+                background-color: #FD6925
+
+        div.swiper-navigation
+            div.arrow
+                border: 1px solid #023373
+
+                svg
+                    path
+                        fill: #023373
+
+                &:hover
+                    svg
+                        path
+                            fill: #FD6925
+
+    div.background
+        position: absolute
+        top: -390px
+        left: 50%
+        margin-left: -952px
+        z-index: -1
+        +screen(l)
+            top: -225px
+            margin-left: -457px
+        +screen(s)
+            top: -140px
+            margin-left: -410px
+
+        img.desktop
+            display: block
+            +screen(l)
+                display: none
+
+        img.tablet
+            display: none
+            +screen(l)
+                display: block
+            +screen(s)
+                display: none
+
+        img.mobile
+            display: none
+            +screen(s)
+                display: block

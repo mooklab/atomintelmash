@@ -1,0 +1,45 @@
+section.services
+    margin-top: 90px
+    margin-bottom: 100px
+    +screen(l)
+        margin-top: 28px
+        margin-bottom: 50px
+    +screen(s)
+        margin-top: 24px
+        margin-bottom: 24px
+
+    div.container
+        display: grid
+        +screen(s)
+            grid-gap: 20px
+
+    div.swiper
+        width: 100%
+        min-width: 0
+        overflow: visible
+
+        div.swiper-wrapper
+            min-height: 100%
+
+        div.swiper-slide
+            opacity: 0
+            pointer-events: none
+            transition: all .3s
+            height: auto !important
+
+        div.swiper-slide-visible
+            opacity: 1
+            pointer-events: auto
+
+    div.navigation
+        div.swiper-navigation
+            div.arrow
+                border-color: white
+                svg
+                    path
+                        fill: white
+
+                &:hover
+                    svg
+                        path
+                            fill: #FD6925

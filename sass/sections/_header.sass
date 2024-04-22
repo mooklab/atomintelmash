@@ -1,0 +1,76 @@
+header
+
+    div.container
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    a.logotype
+        display: grid
+        align-items: center
+        justify-items: center
+        width: 128px
+        height: 128px
+        background-color: #025EA1
+        border-bottom-left-radius: 16px
+        border-bottom-right-radius: 16px
+        +screen(l)
+            width: 52px
+            height: 52px
+            border-bottom-left-radius: 8px
+            border-bottom-right-radius: 8px
+        
+        img
+            +screen(l)
+                width: 34px
+
+    menu
+        display: grid
+        grid-auto-flow: column
+        grid-auto-columns: max-content
+        grid-gap: 14px
+        font-size: 14px
+        line-height: 18px
+        letter-spacing: 0.02em
+        text-transform: uppercase
+        color: #333333
+        +screen(l)
+            display: none
+
+        li
+            padding: 10px
+            a:hover
+                color: #FD6925
+
+    div.language
+        display: grid
+        grid-template-columns: repeat(2, max-content)
+        grid-gap: 14px
+        font-size: 14px
+        line-height: 18px
+        letter-spacing: 0.02em
+        text-transform: uppercase
+        color: #333333
+        +screen(l)
+            display: none
+
+        a
+            display: block
+            padding: 10px
+            border-radius: 14px
+            &.active
+                pointer-events: none
+                background-color: #FD6925
+                color: white
+            &:hover
+                color: #FD6925
+
+    a.phone
+        font-weight: 700
+        font-size: 24px
+        line-height: 31px
+        text-transform: uppercase
+        color: #333333
+        +screen(l)
+            font-size: 12px
+            line-height: 1.3em

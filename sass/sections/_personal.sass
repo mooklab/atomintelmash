@@ -1,0 +1,41 @@
+section.personal
+
+    div.container
+        display: grid
+        grid-gap: 60px
+        +screen(l)
+            grid-gap: 16px
+        +screen(s)
+            grid-gap: 24px
+
+    h2
+        font-weight: 700
+        font-size: 50px
+        line-height: 56px
+        letter-spacing: 0.02em
+        text-transform: uppercase
+        color: #333333
+        +screen(l)
+            font-size: 24px
+            line-height: 26px
+        +screen(s)
+            font-size: 16px
+            line-height: 28px
+
+    div.swiper
+        width: 100%
+        min-width: 0
+        overflow: visible
+
+    div.navigation
+        div.swiper-navigation
+            div.arrow
+                border-color: white
+                svg
+                    path
+                        fill: white
+
+                &:hover
+                    svg
+                        path
+                            fill: #FD6925

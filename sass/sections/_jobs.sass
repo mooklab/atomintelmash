@@ -1,0 +1,178 @@
+section.jobs
+    margin-top: 100px
+    margin-bottom: 100px
+    +screen(l)
+        margin-top: 80px
+        margin-bottom: 50px
+    +screen(s)
+        margin-top: 50px
+
+    div.background
+        position: absolute
+        top: 0
+        left: -120px
+        width: calc(100% + 200px + 120px)
+        height: 100%
+        background-color: #003274
+        border-radius: 100px
+        z-index: -1
+        +screen(l)
+            left: -40px
+            width: calc(100% + 40px + 80px)
+            border-radius: 40px
+        +screen(s)
+            border-radius: 0px
+
+    div.container
+        position: relative
+        color: white
+        padding-top: 73px
+        padding-bottom: 70px
+        +screen(l)
+            padding-top: 40px
+            padding-bottom: 63px
+        +screen(s)
+            padding-top: 45px
+            padding-bottom: 40px
+
+    div.title
+        display: grid
+        align-items: center
+        grid-template-columns: 1fr max-content
+        grid-gap: 24px
+        margin-bottom: 32px
+
+        h2
+            font-weight: 700
+            font-size: 50px
+            line-height: 56px
+            letter-spacing: 0.02em
+            text-transform: uppercase
+            +screen(l)
+                font-size: 24px
+                line-height: 30px
+            +screen(s)
+                font-size: 16px
+                line-height: 22px
+
+        a
+            cursor: pointer
+            padding: 15px 24px
+            border: 1px solid white
+            border-radius: 60px
+            font-size: 14px
+            line-height: 10px
+            letter-spacing: 0.02em
+            text-transform: uppercase
+            color: white
+            +screen(s)
+                display: none
+
+    div.tabs
+        display: flex
+        flex-wrap: wrap
+        width: 100%
+
+    div.tabs_captions
+        display: flex
+        flex-wrap: wrap
+        gap: 20px 10px
+        margin-bottom: 60px
+        +screen(l)
+            margin-bottom: 40px
+            gap: 15px
+            flex-wrap: unset
+            overflow-x: scroll
+            &::-webkit-scrollbar
+                display: none
+                opacity: 0
+
+    div.tab_caption
+        cursor: pointer
+        padding: 15px 24px
+        border: 1px solid #0A6FB8
+        border-radius: 60px
+        font-size: 14px
+        line-height: 10px
+        letter-spacing: 0.02em
+        text-transform: uppercase
+        color: #0A6FB8
+        +screen(l)
+            font-size: 12px
+            padding: 10px 18px
+            white-space: nowrap
+        
+        &.opened
+            border-color: white
+            color: white
+
+    div.tabs_contents
+        width: 100%
+
+    div.tab_content
+        display: none
+        grid-gap: 42px
+
+        &.opened
+            display: grid
+
+        h3
+            font-weight: 400
+            font-size: 30px
+            line-height: 36px
+            letter-spacing: 0.02em
+            text-transform: uppercase
+            +screen(l)
+                font-size: 16px
+                line-height: 23px
+            +screen(s)
+                font-size: 14px
+                line-height: 23px
+
+        div.list
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            grid-gap: 0 24px
+            width: 100%
+            +screen(l)
+                grid-template-columns: repeat(3, 1fr)
+                grid-gap: 0 16px
+            +screen(s)
+                grid-template-columns: 1fr
+                grid-gap: unset
+
+    div.question
+        display: grid
+        grid-template-columns: 400px 1fr
+        grid-template-areas: 'Title Title' 'Text Contacts'
+        grid-gap: 26px 90px
+        margin-top: 75px
+        +screen(l)
+            font-size: 12px
+            line-height: 16px
+            grid-gap: 16px 32px
+            margin-top: 46px
+        +screen(s)
+            grid-template-areas: 'Title' 'Text' 'Contacts'
+            margin-top: 32px
+
+        strong
+            grid-area: Title
+            font-weight: 400
+            font-size: 20px
+            line-height: 1.4
+            +screen(l)
+                font-size: 12px
+
+        span.text
+            grid-area: Text
+            color: #7a99c2
+
+        div
+            grid-area: Contacts
+            display: grid
+
+            a
+                text-decoration: underline
+                &:hover
+                    text-decoration: none

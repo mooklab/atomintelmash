@@ -1,0 +1,43 @@
+mixin person(name, post, image)
+    div.person
+        img(src=image, alt=name)
+        div.text
+            strong !{name}
+            span= post
+
+mixin service(title, image)
+    div.service
+        img(src=image, alt=title)
+        div.description
+            h3= title
+            div.text
+                block
+
+mixin project(title, image, text)
+    div.project
+        img(src=image, alt=title)
+        div.text
+            h3= title
+            span= text
+            div.arrow
+                include ../../images/icons/project_arrow.svg
+
+mixin document(title, text, format)
+    div.document
+        div.title
+            img(src="images/icons/document.svg", alt="")
+            strong= title
+        div.text
+            span= text
+            small= format
+
+mixin advantage(color, icon, title, text)
+    div(class=color).advantage
+        img(src=icon, alt="")
+        h3= title
+        span= text
+
+mixin job(title, company='ООО «АтомИнтелМаш»', link='https://hh.ru/')
+    a(href=link).job
+        strong= title
+        span= company

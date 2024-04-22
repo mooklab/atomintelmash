@@ -1,0 +1,173 @@
+section.main
+    margin-top: 130px
+    margin-bottom: 90px
+    +screen(l)
+        margin-top: 58px
+        margin-bottom: 28px
+    +screen(s)
+        margin-top: 30px
+        margin-bottom: 24px
+
+    div.container
+        display: grid
+        grid-gap: 50px
+        margin-bottom: 140px
+        +screen(l)
+            grid-gap: 29px
+            margin-bottom: 50px
+        +screen(s)
+            grid-gap: 32px
+            margin-bottom: 210px
+        
+        h1
+            font-weight: 700
+            font-size: 60px
+            line-height: 78px
+            letter-spacing: 0.02em
+            text-transform: uppercase
+            +screen(l)
+                font-size: 32px
+                line-height: 40px
+            +screen(s)
+                font-size: 20px
+                line-height: 26px
+
+        span
+            font-size: 18px
+            line-height: 23px
+            letter-spacing: 0.02em
+            text-transform: uppercase
+            padding: 22px 24px
+            border-left: 1px solid #6CACE4
+            +screen(l)
+                font-size: 12px
+                line-height: 1.3em
+                padding: 13px 16px
+            +screen(s)
+                padding: 0px 11px
+
+    div.activity
+        position: relative
+        left: 50%
+        display: grid
+        justify-items: start
+        grid-gap: 40px
+        transform: translateX(-50%)
+        width: calc((100% - 48px) / 3)
+        +screen(l)
+            grid-gap: 24px
+            width: max-content
+        +screen(s)
+            width: 100%
+            max-width: 340px
+
+        div.scroll
+            display: grid
+            justify-items: center
+            grid-gap: 10px
+            margin-bottom: 30px
+            justify-self: center
+            +screen(l)
+                margin-bottom: unset
+                grid-gap: 5px
+            +screen(s)
+                margin-bottom: 18px
+
+            img:first-child
+                width: 24px
+                height: 24px
+                +screen(l)
+                    width: 14px
+                    height: 14px
+                +screen(s)
+                    width: 20px
+                    height: 20px
+
+            img:last-child
+                +screen(l)
+                    height: 39px
+                +screen(s)
+                    height: 14px
+
+        h2
+            font-weight: 700
+            font-size: 50px
+            line-height: 56px
+            letter-spacing: 0.02em
+            text-transform: uppercase
+            color: white
+            +screen(l)
+                font-size: 24px
+                line-height: 26px
+                margin-left: 30px
+            +screen(s)
+                font-size: 16px
+                line-height: 20px
+                margin-left: unset
+
+        button
+            cursor: pointer
+            display: grid
+            align-items: center
+            grid-auto-flow: column
+            grid-auto-columns: max-content
+            grid-gap: 20px
+            box-shadow: 6px 6px 18px #021b3b1a, 22px 24px 32px #021b3b17, 50px 53px 44px #021b3b0d, 90px 94px 52px #021b3b03, 140px 147px 57px #021b3b00
+            background: #0a6fb8
+            border-radius: 60px
+            padding: 14px 35px
+            padding-right: 27px
+            font-size: 14px
+            line-height: 10px
+            letter-spacing: 0.02em
+            text-transform: uppercase
+            color: white
+            +screen(l)
+                grid-gap: 10px
+                padding: 11px 20px
+                font-size: 12px
+                margin-left: 30px
+            +screen(s)
+                grid-gap: 5px
+                padding: 11px 10px
+                margin-left: unset
+            
+            img
+                width: 32px
+                height: 32px
+                +screen(l)
+                    width: 23px
+                    height: 23px
+                +screen(s)
+                    width: 14px
+                    height: 14px
+
+    div.background
+        position: absolute
+        top: -520px
+        left: 50%
+        margin-left: -1090px
+        z-index: -1
+        +screen(l)
+            top: -160px
+            margin-left: -410px
+        +screen(s)
+            top: -48px
+            margin-left: -438px
+
+        img.desktop
+            display: block
+            +screen(l)
+                display: none
+
+        img.tablet
+            display: none
+            +screen(l)
+                display: block
+            +screen(s)
+                display: none
+
+        img.mobile
+            display: none
+            +screen(s)
+                display: block

@@ -1,0 +1,78 @@
+section.supplier
+
+    div.container
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 30px
+        +screen(l)
+            font-size: 12px
+            line-height: 1.3em
+        +screen(s)
+            grid-template-columns: 1fr
+
+
+        img.blank
+            width: 100%
+            max-width: 706px
+            +screen(l)
+                justify-self: center
+            +screen(s)
+                display: none
+
+        div.text
+            color: #818d9c
+
+            h2
+                font-weight: 700
+                font-size: 50px
+                line-height: 56px
+                letter-spacing: 0.02em
+                text-transform: uppercase
+                color: #333333
+                +screen(l)
+                    font-size: 24px
+                    line-height: 26px
+                +screen(s)
+                    font-size: 16px
+
+            div.divide
+                width: 100%
+                height: 1px
+                background-color: #deeaf2
+
+            span.about
+                display: block
+                margin-bottom: 27px
+                margin-top: 40px
+                +screen(l)
+                    margin-top: 16px
+                    margin-bottom: 30px
+
+            div.contacts
+                display: grid
+                padding-top: 30px
+                padding-bottom: 59px
+                +screen(l)
+                    padding-top: 15px
+                    padding-bottom: 15px
+                a
+                    text-decoration: underline
+                    &:hover
+                        text-decoration: none
+
+            a.document
+                display: grid
+                align-items: center
+                grid-template-columns: max-content 1fr
+                grid-gap: 10px
+                font-size: 20px
+                line-height: 22px
+                text-align: left
+                color: #333333
+                padding-top: 18px
+                padding-bottom: 21px
+                +screen(l)
+                    font-size: 12px
+                    line-height: 1.3em
+                    padding-top: 10px
+                    padding-bottom: 10px

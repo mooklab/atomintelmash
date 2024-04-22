@@ -1,0 +1,40 @@
+include ../elements/_mixin.pug
+
+section.personal
+
+    div.container
+
+        h2 Наше руководство
+
+        div.swiper
+            div.swiper-wrapper
+                div.swiper-slide
+                    +person('Андрей Валерьевич <br/>Громов', 'Генеральный директор', 'images/personal/1.webp')
+                div.swiper-slide
+                    +person('Амир Нурутдинович <br/>Хуснутдинов', 'Генеральный директор', 'images/personal/2.webp')
+                div.swiper-slide
+                    +person('Вадим Арсенович <br/>Акопов', 'Директор по производству', 'images/personal/3.webp')
+                div.swiper-slide
+                    +person('Ольга Сергеевна <br/>Розанова', 'Исполнительный директор', 'images/personal/4.webp')
+                div.swiper-slide
+                    +person('Александр Викторович <br/>Безрукавников', 'Директор по управлению проектами', 'images/personal/5.webp')
+                div.swiper-slide
+                    +person('Александр Николаевич <br/>Кононенко', 'Финансовый директор', 'images/personal/6.webp')
+                div.swiper-slide
+                    +person('Сергей Викторович <br/>Костяев', 'Начальник Отдела технического контроля', 'images/personal/7.webp')
+                div.swiper-slide
+                    +person('Светлана Львовна <br/>Друккер', 'Заместитель директора по производству – начальник службы качества', 'images/personal/8.webp')
+                div.swiper-slide
+                    +person('Михаил Сергеевич <br/>Плохов', 'Заместитель начальника испытательно-производственного центра', 'images/personal/9.webp')
+                div.swiper-slide
+                    +person('Дмитрий Николаевич <br/>Семёнов', 'Начальник конструкторско-технологического отдела', 'images/personal/10.webp')
+                div.swiper-slide
+                    +person('Дмитрий Владимирович <br/>Кайнов', 'Коммерческий директор', 'images/personal/11.webp')
+                div.swiper-slide
+                    +person('Елена Николаевна <br/>Добрычева', 'Руководитель направления по работе с персоналом', 'images/personal/12.webp')
+
+        div.navigation
+            div.swiper-scrollbar
+            div.swiper-navigation
+                div.arrow: include ../../images/icons/swiper_arrow.svg
+                div.arrow: include ../../images/icons/swiper_arrow.svg

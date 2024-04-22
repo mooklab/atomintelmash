@@ -1,0 +1,66 @@
+section.advantages
+    margin-top: 100px
+    margin-bottom: 210px
+    +screen(l)
+        margin-top: 80px
+        margin-bottom: 60px
+    +screen(s)
+        margin-top: 50px
+        margin-bottom: 35px
+
+    div.container
+        display: grid
+        grid-gap: 44px
+        +screen(l)
+            grid-gap: 24px
+
+    h2
+        font-weight: 700
+        font-size: 50px
+        line-height: 56px
+        letter-spacing: 0.02em
+        text-transform: uppercase
+        color: #333333
+        +screen(l)
+            font-size: 24px
+            line-height: 26px
+        +screen(s)
+            font-size: 16px
+            line-height: 26px
+
+    div.swiper
+        width: 100%
+        min-width: 0
+        overflow: visible
+
+    div.background
+        position: absolute
+        top: -640px
+        left: 50%
+        margin-left: -1570px
+        z-index: -10
+        +screen(l)
+            top: -70px
+            margin-left: -670px
+        +screen(s)
+            top: -540px
+            margin-left: -390px
+
+        img.desktop
+            display: block
+            +screen(l)
+                display: none
+
+        img.tablet
+            display: none
+            +screen(l)
+                display: block
+            +screen(s)
+                display: none
+
+        img.mobile
+            display: none
+            +screen(s)
+                display: block
+
+    

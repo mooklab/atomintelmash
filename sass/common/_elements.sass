@@ -1,0 +1,525 @@
+div.person
+    border-radius: 25px
+    overflow: hidden
+    box-shadow: $shadow
+    background-color: white
+    height: 100%
+    +screen(l)
+        border-radius: 11px
+        min-height: 230px
+    +screen(s)
+        min-height: 234px
+
+    img
+        width: 100%
+        aspect-ratio: 369 / 279
+        +screen(l)
+            aspect-ratio: 157 / 125
+        +screen(s)
+            aspect-ratio: 160 / 127
+
+    div.text
+        display: grid
+        padding: 30px 20px
+        padding-bottom: 50px
+        +screen(l)
+            padding: 12px 10px
+            padding-bottom: 18px
+
+        strong
+            font-size: 20px
+            font-weight: 400
+            line-height: 26px
+            +screen(l)
+                font-size: 12px
+                line-height: 1.3em
+
+            &::after
+                content: ''
+                display: block
+                width: 50px
+                height: 1px
+                background-color: #025EA1
+                margin-top: 20px
+                margin-bottom: 30px
+                +screen(l)
+                    margin-top: 10px
+                    margin-bottom: 10px
+                    width: 22px
+
+        span
+            font-size: 14px
+            line-height: 20px
+            color: #818d9c
+            +screen(l)
+                font-size: 10px
+                line-height: 1.3em
+
+div.service
+    height: 100%
+    background-color: white
+    box-shadow: $shadow
+    border-radius: 25px
+    overflow: hidden
+    +screen(l)
+        border-radius: 11px
+
+    img
+        width: 100%
+        aspect-ratio: 495 / 381
+        object-fit: cover
+        object-position: center center
+        +screen(l)
+            aspect-ratio: 222 / 170
+
+    div.description
+        color: #818d9c
+        padding: 40px 35px 64px
+        +screen(l)
+            padding: 16px 10px
+            padding-bottom: 20px
+            font-size: 12px
+            line-height: 1.3em
+
+        & > *
+            max-width: 380px
+
+        h3
+            position: relative
+            display: block
+            font-weight: 400
+            font-size: 20px
+            line-height: 26px
+            letter-spacing: 0.02em
+            text-transform: uppercase
+            color: #333333
+            +screen(l)
+                font-size: 12px
+                line-height: 18px
+
+            &::after
+                content: ''
+                display: block
+                width: 50px
+                height: 1px
+                background-color: #6cace4
+                margin-top: 35px
+                margin-bottom: 25px
+                +screen(l)
+                    margin-top: 16px
+                    margin-bottom: 20px
+                +screen(s)
+                    margin-top: 20px
+                    margin-bottom: 16px
+
+        div.text
+            +screen(l)
+                display: -webkit-box
+                -webkit-line-clamp: 5
+                -webkit-box-orient: vertical
+                overflow: hidden
+                text-overflow: ellipsis
+
+div.project
+    background-color: white
+    box-shadow: $shadow
+    border-radius: 25px
+    overflow: hidden
+    +screen(l)
+        border-radius: 11px
+        height: 100%
+
+    img
+        width: 100%
+        aspect-ratio: 495 / 373
+        object-fit: cover
+        object-position: center center
+        +screen(l)
+            aspect-ratio: 221 / 167
+
+    div.text
+        color: #818d9c
+        padding: 40px 20px 64px
+        +screen(l)
+            font-size: 12px
+            line-height: 1.3em
+            padding: 20px 10px
+
+        & > *
+            max-width: 420px
+
+        h3
+            position: relative
+            display: block
+            font-weight: 400
+            font-size: 20px
+            line-height: 26px
+            letter-spacing: 0.02em
+            text-transform: uppercase
+            color: #333333
+            +screen(l)
+                font-size: 12px
+                line-height: 18px
+
+            &::after
+                content: ''
+                display: block
+                width: 50px
+                height: 1px
+                background-color: #6cace4
+                margin-top: 35px
+                margin-bottom: 25px
+                +screen(l)
+                    margin-top: 16px
+                    margin-bottom: 20px
+                +screen(s)
+                    margin-top: 20px
+                    margin-bottom: 16px
+
+        span
+            +screen(l)
+                display: -webkit-box
+                -webkit-line-clamp: 4
+                -webkit-box-orient: vertical
+                overflow: hidden
+                text-overflow: ellipsis
+
+        div.arrow
+            margin-top: 32px
+            +screen(s)
+                margin-top: 28px
+
+div.document
+    display: grid
+    grid-gap: 20px
+    +screen(l)
+        grid-gap: 16px
+
+    div.title
+        display: grid
+        align-items: center
+        grid-template-columns: max-content 1fr
+        grid-gap: 32px 20px
+        color: white
+        +screen(l)
+            grid-gap: 14px 10px
+        +screen(s)
+            grid-gap: 20px 5px
+
+        &::after
+            content: ''
+            display: block
+            width: 50px
+            height: 1px
+            background-color: white
+            +screen(l)
+                width: 22px
+            +screen(s)
+                width: 20px
+
+        img
+            +screen(l)
+                width: 22px
+            +screen(s)
+                width: 20px
+
+        strong
+            display: block
+            max-width: 240px
+            font-weight: 400
+            font-size: 20px
+            line-height: 36px
+            letter-spacing: 0.02em
+            text-transform: uppercase
+            +screen(l)
+                font-size: 12px
+                line-height: 18px
+
+    div.text
+        display: grid
+        grid-gap: 20px
+        +screen(l)
+            grid-gap: 10px
+
+        span
+            display: block
+            max-width: 240px
+            font-size: 20px
+            line-height: 26px
+            +screen(l)
+                font-size: 12px
+                line-height: 1.3em
+
+        small
+            font-size: 16px
+            line-height: 11px
+            color: #7a99c2
+            +screen(l)
+                font-size: 10px
+                line-height: 1.3em
+
+div.navigation
+    display: grid
+    align-items: center
+    grid-template-columns: 1fr max-content
+    grid-gap: 38px
+
+    div.swiper-scrollbar
+        position: static
+        width: 100%
+        height: 1px
+        background-color: #0077D1
+
+        div.swiper-scrollbar-drag
+            background-color: #FD6925
+
+    div.swiper-navigation
+        display: grid
+        grid-template-columns: repeat(2, max-content)
+        user-select: none
+
+        &:has(div.swiper-button-lock)
+            display: none
+
+        div.arrow
+            cursor: pointer
+            display: grid
+            align-items: center
+            justify-items: center
+            width: 40px
+            height: 40px
+            border: 1px solid #023373
+            +screen(l)
+                width: 22px
+                height: 22px
+            +screen(s)
+                width: 32px
+                height: 32px
+
+            svg
+                width: 60%
+                path
+                    fill: #023373
+            
+            &:hover
+                svg
+                    path
+                        fill: #FD6925
+
+            &:first-child
+                border-bottom-left-radius: 15px
+                +screen(l)
+                    border-bottom-left-radius: 8px
+
+            &:last-child
+                margin-left: -1px
+                border-top-right-radius: 15px
+                +screen(l)
+                    border-top-right-radius: 8px
+
+                svg
+                    transform: rotate(180deg)
+
+div.news
+    position: relative
+    display: grid
+    border-radius: 25px
+    overflow: hidden
+    box-shadow: $shadow
+    left: 20%
+    width: 80%
+    height: 100%
+    +screen(l)
+        border-radius: 12px
+    +screen(s)
+        left: 0
+        width: 100%
+
+
+    img.preview
+        width: 100%
+        aspect-ratio: 546 / 338
+        object-fit: cover
+        object-position: center center
+        +screen(s)
+            aspect-ratio: 245 / 169
+
+    div.text
+        display: grid
+        padding: 40px 20px
+        padding-bottom: 72px
+        background-color: white
+        +screen(l)
+            padding: 14px 15px
+
+        & > *
+            max-width: 440px
+
+        small
+            color: #9caebb
+            margin-bottom: 30px
+            +screen(l)
+                font-size: 12px
+                line-height: 1.3em
+                margin-bottom: 16px
+
+        strong
+            font-weight: 400
+            font-size: 20px
+            line-height: 26px
+            color: #333333
+            +screen(l)
+                font-size: 12px
+                line-height: 1.3em
+
+            &::after
+                content: ''
+                display: block
+                width: 40px
+                height: 1px
+                background-color: #6CACE4
+                margin-top: 20px
+                margin-bottom: 32px
+                +screen(l)
+                    margin-top: 15px
+                    margin-bottom: 20px
+
+        span
+            color: #808c9c
+            +screen(l)
+                font-size: 12px
+                line-height: 1.3em
+                display: -webkit-box
+                -webkit-line-clamp: 4
+                -webkit-box-orient: vertical
+                overflow: hidden
+                text-overflow: ellipsis
+
+    &.big
+        position: relative
+        align-self: stretch
+        left: 0
+        width: 120%
+        +screen(s)
+            width: 100%
+
+        img.preview
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            +screen(s)
+                position: static
+                top: unset
+                left: unset
+
+        div.text
+            position: relative
+            align-self: end
+            justify-self: end
+            max-width: 522px
+            +screen(l)
+                max-width: 60%
+            +screen(s)
+                max-width: unset
+
+div.advantage
+    border-radius: 25px
+    padding: 30px 35px
+    box-shadow: $shadow
+    height: 100%
+    +screen(l)
+        padding: 15px
+        padding-bottom: 44px
+        font-size: 12px
+        line-height: 1.3em
+
+    &.dark
+        background-color: #003274
+        color: #7A9AC3
+
+    &.blue
+        background-color: #025EA1
+        color: #7A9AC3
+
+    &.white
+        background-color: #ffffff
+        color: #818D9C
+
+        h3
+            color: #333333
+            &::after
+                background-color: #025EA1
+    
+    img
+        margin-bottom: 30px
+        height: 150px
+        +screen(l)
+            height: 70px
+            margin-bottom: 16px
+
+    h3
+        display: block
+        font-weight: 400
+        font-size: 30px
+        line-height: 36px
+        letter-spacing: 0.02em
+        text-transform: uppercase
+        color: white
+        +screen(l)
+            font-size: 12px
+            line-height: 18px
+
+        &::after
+            content: ''
+            display: block
+            width: 50px
+            height: 1px
+            background-color: white
+            margin-top: 70px
+            margin-bottom: 30px
+            +screen(l)
+                margin-top: 20px
+                margin-bottom: 24px
+                width: 22px
+
+a.job
+    position: relative
+    display: grid
+    grid-gap: 11px
+    border-top: 1px solid white
+    border-bottom: 1px solid white
+    padding-top: 26px
+    padding-bottom: 23px
+    margin-top: -1px
+    +screen(l)
+        padding-top: 16px
+        padding-bottom: 16px
+        grid-gap: 9px
+
+    strong
+        font-weight: 400
+        font-size: 20px
+        line-height: 1.4
+        +screen(l)
+            font-size: 12px
+            line-height: 1.4em
+
+    span
+        color: #7a99c2
+        +screen(l)
+            font-size: 10px
+
+    &::after
+        content: ''
+        display: block
+        position: absolute
+        top: 20px
+        right: 0
+        width: 10px
+        height: 10px
+        background-image: url(../images/icons/arrow_job.svg)
+        background-repeat: no-repeat
+        background-size: contain
+

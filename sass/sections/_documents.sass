@@ -1,0 +1,121 @@
+section.documents
+
+    div.background
+        position: absolute
+        top: 0
+        left: -120px
+        width: calc(100% + 200px + 120px)
+        height: 100%
+        background-color: #003274
+        border-radius: 100px
+        z-index: -9
+        +screen(l)
+            left: -40px
+            width: calc(100% + 40px + 80px)
+            border-radius: 40px
+        +screen(s)
+            border-radius: 0px
+
+    div.container
+        position: relative
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-areas: 'Title' 'Captions' 'Contents'
+        grid-gap: 50px
+        padding-top: 68px
+        padding-bottom: 73px
+        color: white
+        +screen(l)
+            padding-top: 32px
+            padding-bottom: 26px
+            grid-template-columns: max-content 1fr
+            align-items: center
+            grid-template-areas: 'Title Captions' 'Contents Contents'
+            grid-gap: 26px 64px
+        +screen(s)
+            padding-top: 40px
+            padding-bottom: 40px
+
+    h2
+        grid-area: Title
+        font-weight: 700
+        font-size: 50px
+        line-height: 56px
+        letter-spacing: 0.02em
+        text-transform: uppercase
+        +screen(l)
+            font-size: 24px
+            line-height: 30px
+        +screen(s)
+            font-size: 16px
+            line-height: 22px
+
+    div.tabs
+        display: contents
+        width: 100%
+
+    div.tabs_captions
+        grid-area: Captions
+        display: flex
+        gap: 10px
+        margin-bottom: 13px
+        +screen(l)
+            margin-bottom: unset
+
+    div.tab_caption
+        cursor: pointer
+        padding: 15px 24px
+        border: 1px solid #0A6FB8
+        border-radius: 60px
+        font-size: 14px
+        line-height: 10px
+        letter-spacing: 0.02em
+        text-transform: uppercase
+        color: #0A6FB8
+        +screen(l)
+            font-size: 12px
+            padding: 10px 18px
+        
+        &.opened
+            border-color: white
+            color: white
+
+    div.tabs_contents
+        grid-area: Contents
+
+    div.tab_content
+        display: none
+        grid-gap: 43px
+        width: 100%
+        +screen(l)
+            grid-gap: 32px
+        +screen(s)
+            grid-gap: 20px
+
+        &.opened
+            display: grid
+
+        div.swiper
+            width: 100%
+            min-width: 0
+
+    div.navigation
+
+        div.swiper-scrollbar
+            background-color: #1C5197
+
+            div.swiper-scrollbar-drag
+                background-color: #FD6925
+
+        div.swiper-navigation
+            div.arrow
+                border: 1px solid white
+
+                svg
+                    path
+                        fill: white
+                
+                &:hover
+                    svg
+                        path
+                            fill: #FD6925

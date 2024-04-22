@@ -1,0 +1,149 @@
+section.contacts
+    margin-top: 92px
+    margin-bottom: 169px
+    +screen(l)
+        margin-top: 80px
+        margin-bottom: 60px
+    +screen(s)
+        margin-top: 40px
+        margin-bottom: 70px
+
+    div.container
+        display: grid
+        align-items: center
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 30px
+        +screen(s)
+            grid-template-columns: 1fr
+
+    div.image
+        position: relative
+        width: 100%
+        height: 100%
+        +screen(s)
+            width: 100%
+            aspect-ratio: 14 / 9
+            max-width: 340px
+            margin: 0 auto
+
+        img
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+            object-position: center center
+
+    div.text
+        max-width: 474px
+        margin-left: 110px
+        +screen(l)
+            margin-left: unset
+
+        h2
+            font-weight: 700
+            font-size: 40px
+            line-height: 1.3
+            letter-spacing: 0.02em
+            text-transform: uppercase
+            margin-bottom: 64px
+            +screen(l)
+                font-size: 24px
+                line-height: 26px
+                margin-bottom: 34px
+            +screen(l)
+                font-size: 16px
+                line-height: 26px
+                margin-bottom: 19px
+
+        div.contacts
+            display: grid
+            justify-items: start
+            grid-gap: 20px
+            +screen(l)
+                grid-gap: 12px
+            +screen(s)
+                grid-gap: 10px
+
+            a.phone
+                display: block
+                height: 22px
+                font-weight: 700
+                font-size: 32px
+                line-height: 22px
+                text-align: left
+                color: #000000
+                +screen(l)
+                    font-size: 16px
+                    line-height: 12px
+                +screen(s)
+                    font-size: 14px
+                    line-height: 12px
+
+            a.email
+                position: relative
+                display: inline-block
+                font-weight: 400
+                font-size: 16px
+                line-height: 22px
+                +screen(l)
+                    font-size: 12px
+                    line-height: 1em
+
+                &::after
+                    content: ''
+                    position: absolute
+                    bottom: 2px
+                    left: 0
+                    width: 100%
+                    height: 1px
+                    background-color: #6CACE4
+
+        div.adress
+            display: grid
+            grid-gap: 20px
+            +screen(l)
+                grid-gap: 11px
+
+            strong
+                display: block
+                height: 14px
+                font-size: 20px
+                font-weight: 400
+                line-height: 22px
+                color: #333333
+                +screen(l)
+                    font-size: 12px
+                    line-height: 12px
+
+            span
+                font-size: 16px
+                line-height: 22px
+                color: #808c9c
+                +screen(l)
+                    font-size: 12px
+                    line-height: 12px
+
+
+        div.small_divide
+            width: 40px
+            height: 1px
+            background-color: #6cace4
+            margin-top: 42px
+            margin-bottom: 34px
+            +screen(l)
+                margin-top: 24px
+                margin-bottom: 20px
+                width: 22px
+
+        div.big_divide
+            width: 100%
+            height: 1px
+            background-color: #DEEAF2
+            margin-top: 42px
+            margin-bottom: 42px
+            +screen(l)
+                margin-top: 16px
+                margin-bottom: 16px
+                max-width: 245px

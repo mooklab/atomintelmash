@@ -1,0 +1,57 @@
+include ../elements/_mixin.pug
+
+section.jobs
+    div.container
+
+        div.title
+            h2 Вакансии
+            a(href="https://hh.ru/") Смотреть вакансии на hh.ru
+
+        div.tabs
+
+            div.tabs_captions
+                div.tab_caption.opened Конструкторско-технический отдел
+                div.tab_caption Служба продаж
+                div.tab_caption Отдел МТО
+                div.tab_caption Отдел разработки
+                div.tab_caption Финансовый отдел
+                div.tab_caption Блок исполнительного директора
+                div.tab_caption Проектный офис
+                div.tab_caption Испытательно-производственный центр
+                div.tab_caption Служба качества
+                div.tab_caption Отдел технического контроля
+
+            div.tabs_contents
+                div.tab_content.opened
+                    h3 Конструкторско-технический отдел
+                    div.list
+                        +job('Слесарь')
+                        +job('Электрогазосварщик')
+                        +job('Специалист службы качества')
+                        +job('Контролер ОТК')
+                        +job('Инженер-конструктор')
+                        +job('Инженер АСУ')
+                        +job('Технический писатель')
+                        +job('Инженер-технолог')
+                - for( x = 1; x <= 9; x++ )
+                    div.tab_content
+                        h3 Конструкторско-технический отдел
+                        div.list
+                            +job('Слесарь')
+                            +job('Электрогазосварщик')
+                            +job('Специалист службы качества')
+                            +job('Контролер ОТК')
+                            +job('Инженер-конструктор')
+                            +job('Инженер АСУ')
+                            +job('Технический писатель')
+                            +job('Инженер-технолог')
+
+        div.question
+            strong Хотите работать в ООО «АтомИнтелМаш»?
+            span.text Присылайте свое резюме с указанием желаемой позиции руководителю направления по работе с персоналом Добрычевой Елене.
+            div
+                span тел.: +7 922 658 43 11
+                span e-mail: #[a(href="mailto:dobrycheva_e@atomintelmash.ru") dobrycheva_e@atomintelmash.ru]
+                span Присоединяйтесь к команде!
+
+        div.background
