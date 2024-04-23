@@ -32,13 +32,14 @@ section.jobs
         color: white
         padding-top: 73px
         padding-bottom: 70px
-        overflow: visible
         +screen(l)
             padding-top: 40px
             padding-bottom: 63px
+            width: calc(100% + 80px)
         +screen(s)
             padding-top: 45px
             padding-bottom: 40px
+            width: calc(100% + 40px)
 
     div.title
         display: grid
@@ -90,7 +91,7 @@ section.jobs
         +screen(l)
             gap: 15px
             flex-wrap: unset
-            // overflow-x: scroll
+            overflow-x: scroll
             margin-bottom: 40px
             &::-webkit-scrollbar
                 display: none
@@ -116,7 +117,10 @@ section.jobs
             color: white
 
     div.tabs_contents
-        width: 100%
+        +screen(l)
+            width: calc(100% - 80px)
+        +screen(s)
+            width: calc(100% - 40px)
 
     div.tab_content
         display: none

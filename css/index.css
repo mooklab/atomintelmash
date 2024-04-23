@@ -1288,18 +1288,19 @@ section.jobs div.container {
   color: white;
   padding-top: 73px;
   padding-bottom: 70px;
-  overflow: visible;
 }
 @media (max-width: 1280px) {
   section.jobs div.container {
     padding-top: 40px;
     padding-bottom: 63px;
+    width: calc(100% + 80px);
   }
 }
 @media (max-width: 767px) {
   section.jobs div.container {
     padding-top: 45px;
     padding-bottom: 40px;
+    width: calc(100% + 40px);
   }
 }
 section.jobs div.title {
@@ -1376,6 +1377,7 @@ section.jobs div.tabs_captions {
     gap: 15px;
     -ms-flex-wrap: unset;
         flex-wrap: unset;
+    overflow-x: scroll;
     margin-bottom: 40px;
   }
   section.jobs div.tabs_captions::-webkit-scrollbar {
@@ -1405,8 +1407,15 @@ section.jobs div.tab_caption.opened {
   border-color: white;
   color: white;
 }
-section.jobs div.tabs_contents {
-  width: 100%;
+@media (max-width: 1280px) {
+  section.jobs div.tabs_contents {
+    width: calc(100% - 80px);
+  }
+}
+@media (max-width: 767px) {
+  section.jobs div.tabs_contents {
+    width: calc(100% - 40px);
+  }
 }
 section.jobs div.tab_content {
   display: none;
