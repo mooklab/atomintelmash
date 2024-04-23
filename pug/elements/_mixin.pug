@@ -20,7 +20,11 @@ mixin project(title, image, text)
             h3= title
             span= text
             div.arrow
-                include ../../images/icons/project_arrow.svg
+                div.show
+                    include ../../images/icons/project_arrow.svg
+                div.close Закрыть
+        if block
+            block
 
 mixin document(title, text, format)
     a(href="###").document

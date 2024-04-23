@@ -122,10 +122,10 @@ div.service
                 text-overflow: ellipsis
 
 div.project
+    position: relative
     background-color: white
     box-shadow: $shadow
     border-radius: 25px
-    overflow: hidden
     +screen(l)
         border-radius: 11px
         height: 100%
@@ -138,8 +138,14 @@ div.project
         aspect-ratio: 495 / 373
         object-fit: cover
         object-position: center center
+        border-top-right-radius: 25px
+        border-top-left-radius: 25px
+        transition: all .2s
         +screen(l)
             aspect-ratio: 221 / 167
+            border-top-right-radius: 11px
+            border-top-left-radius: 11px
+
 
     div.text
         color: #818d9c
@@ -194,12 +200,102 @@ div.project
                 text-overflow: ellipsis
 
         div.arrow
+            position: relative
+            cursor: pointer
             margin-top: 14px
+            z-index: 10
+            +screen(l)
+                svg
+                    width: 20px
             +screen(s)
                 margin-top: 19px
                 align-self: end
-                svg
-                    width: 20px
+
+            div.close
+                display: none
+                font-size: 14px
+                line-height: 18px
+                letter-spacing: 0.02em
+                color: #0A6FB8
+                text-transform: uppercase
+                text-decoration: underline
+                +screen(l)
+                    font-size: 12px
+                    line-height: 16px
+                &:hover
+                    text-decoration: none
+
+    div.additional
+        display: none
+        position: absolute
+        background-color: white
+        top: 0
+        left: 100%
+        width: 0
+        height: 100%
+        z-index: 9
+        padding: 22px
+        border-top-right-radius: 25px
+        border-bottom-right-radius: 25px
+        color: #818D9C
+        box-shadow: 18px 6px 18px #021b3b1a, 22px 24px 32px #021b3b17, 50px 53px 44px #021b3b0d, 90px 94px 52px #021b3b03, 140px 147px 57px #021b3b00
+        overflow: hidden
+        transition: all .2s
+        +screen(l)
+            font-size: 12px
+            line-height: 16px
+            border-top-right-radius: 11px
+            border-bottom-right-radius: 11px
+            padding: 10px
+            padding-left: unset
+        +screen(s)
+            left: 0
+            right: 0
+            top: 0
+            bottom: 0
+            border-radius: 11px
+
+        div.wrap
+            height: 100%
+            border-left: 1px solid #C1DBEE
+            padding-left: 22px
+            overflow-y: auto
+            +screen(l)
+                padding-left: 10px
+            +screen(s)
+                padding-left: unset
+                border: unset
+            &::-webkit-scrollbar
+                display: none
+                opacity: 0
+
+    &.open
+        border-top-right-radius: unset
+        border-bottom-right-radius: unset
+        +screen(s)
+            border-radius: 11px
+        img
+            padding: 20px
+            padding-bottom: unset
+            border-radius: unset
+            +screen(l)
+                padding: 10px
+        div.additional
+            display: block
+            width: calc(100% + 24px)
+            +screen(l)
+                width: calc(100% + 11px)
+            +screen(s)
+                width: 100%
+                padding: 10px
+                padding-bottom: 40px
+
+        div.text
+            div.arrow
+                div.show
+                    display: none
+                div.close
+                    display: block
 
 a.document
     display: grid

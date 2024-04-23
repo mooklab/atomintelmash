@@ -530,6 +530,9 @@ section.projects div.swiper div.swiper-slide {
   transition: all 0.3s;
   height: auto !important;
 }
+section.projects div.swiper div.swiper-slide.open {
+  z-index: 1;
+}
 section.projects div.swiper div.swiper-slide-visible {
   opacity: 1;
   pointer-events: auto;
@@ -541,6 +544,41 @@ section.projects div.swiper div.swiper-slide-next {
   section.projects div.swiper div.swiper-slide-next {
     margin-top: unset;
   }
+}
+section.projects div.swiper-slide:not(.swiper-slide-active):not(.swiper-slide-next).open div.project {
+  border-radius: 25px;
+  border-top-left-radius: unset;
+  border-bottom-left-radius: unset;
+}
+@media (max-width: 1280px) {
+  section.projects div.swiper-slide:not(.swiper-slide-active):not(.swiper-slide-next).open div.project {
+    border-radius: 11px;
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+  }
+}
+section.projects div.swiper-slide:not(.swiper-slide-active):not(.swiper-slide-next) div.additional {
+  width: 100%;
+  right: 100%;
+  left: unset;
+  -webkit-box-shadow: -18px -6px 18px rgba(2, 27, 59, 0.1019607843), -22px -24px 32px rgba(2, 27, 59, 0.0901960784), -50px -53px 44px rgba(2, 27, 59, 0.0509803922), -90px -94px 52px rgba(2, 27, 59, 0.0117647059), -140px -147px 57px rgba(2, 27, 59, 0);
+          box-shadow: -18px -6px 18px rgba(2, 27, 59, 0.1019607843), -22px -24px 32px rgba(2, 27, 59, 0.0901960784), -50px -53px 44px rgba(2, 27, 59, 0.0509803922), -90px -94px 52px rgba(2, 27, 59, 0.0117647059), -140px -147px 57px rgba(2, 27, 59, 0);
+  border-radius: unset;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+@media (max-width: 1280px) {
+  section.projects div.swiper-slide:not(.swiper-slide-active):not(.swiper-slide-next) div.additional {
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+    padding: 10px;
+  }
+}
+section.projects div.swiper-slide:not(.swiper-slide-active):not(.swiper-slide-next) div.additional div.wrap {
+  border-left: unset;
+  padding-left: unset;
+  border-right: 1px solid #C1DBEE;
+  padding-right: 22px;
 }
 section.projects div.navigation div.swiper-scrollbar {
   background-color: #0077D1;
@@ -1293,14 +1331,12 @@ section.jobs div.container {
   section.jobs div.container {
     padding-top: 40px;
     padding-bottom: 63px;
-    width: calc(100% + 80px);
   }
 }
 @media (max-width: 767px) {
   section.jobs div.container {
     padding-top: 45px;
     padding-bottom: 40px;
-    width: calc(100% + 40px);
   }
 }
 section.jobs div.title {
@@ -1361,7 +1397,19 @@ section.jobs div.tabs {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
+  position: relative;
+}
+@media (max-width: 1280px) {
+  section.jobs div.tabs {
+    left: -40px;
+    width: calc(100% + 80px);
+  }
+}
+@media (max-width: 767px) {
+  section.jobs div.tabs {
+    left: -20px;
+    width: calc(100% + 40px);
+  }
 }
 section.jobs div.tabs_captions {
   display: -webkit-box;
@@ -1379,7 +1427,17 @@ section.jobs div.tabs_captions {
         flex-wrap: unset;
     overflow-x: scroll;
     margin-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
+}
+@media (max-width: 1280px) and (max-width: 767px) {
+  section.jobs div.tabs_captions {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 1280px) {
   section.jobs div.tabs_captions::-webkit-scrollbar {
     display: none;
     opacity: 0;
@@ -1407,14 +1465,13 @@ section.jobs div.tab_caption.opened {
   border-color: white;
   color: white;
 }
+section.jobs div.tabs_contents {
+  width: 100%;
+}
 @media (max-width: 1280px) {
   section.jobs div.tabs_contents {
-    width: calc(100% - 80px);
-  }
-}
-@media (max-width: 767px) {
-  section.jobs div.tabs_contents {
-    width: calc(100% - 40px);
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 section.jobs div.tab_content {

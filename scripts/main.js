@@ -5,6 +5,8 @@ personalSlider = document.querySelector('section.personal div.swiper')
 newsSlider = document.querySelector('section.news div.swiper')
 advantagesSlider = document.querySelector('section.advantages div.swiper')
 aboutSlider = document.querySelector('section.about div.swiper')
+menuIcon = document.querySelector('header div.menu_icon')
+menuPopup = document.querySelector('header div.mobile_menu')
 
 documentsSliders.forEach( documentSlider => {
     
@@ -56,6 +58,7 @@ new Swiper( projectsSlider, {
     slidesPerView: 1.5,
     spaceBetween: 11,
     watchSlidesProgress: true,
+    slideToClickedSlide: true,
     scrollbar: {
         el: projectsSlider.parentNode.querySelector('div.swiper-scrollbar')
     },
@@ -66,11 +69,13 @@ new Swiper( projectsSlider, {
     breakpoints: {
         1280: {
             slidesPerView: 3,
-            spaceBetween: 24
+            spaceBetween: 24,
+            slideToClickedSlide: false
         },
         768: {
             slidesPerView: 3,
-            spaceBetween: 11
+            spaceBetween: 11,
+            slideToClickedSlide: false
         }
     }
 })
@@ -176,4 +181,32 @@ new Swiper( advantagesSlider, {
             }
         }
     }
+})
+
+menuIcon.addEventListener('click', event => {
+    menuPopup.classList.toggle('open')
+    menuIcon.classList.toggle('open')
+})
+
+
+projectsSlider.querySelectorAll('div.project div.arrow div.show').forEach( arrow => {
+    arrow.addEventListener('click', event => {
+
+        projectsSlider.querySelectorAll('.open').forEach( element => {
+            element.classList.remove('open')
+        })
+
+        arrow.closest('div.project').classList.add('open')
+        arrow.closest('div.swiper-slide').classList.add('open')
+
+    })
+})
+projectsSlider.querySelectorAll('div.project div.arrow div.close').forEach( arrow => {
+    arrow.addEventListener('click', event => {
+
+        projectsSlider.querySelectorAll('.open').forEach( element => {
+            element.classList.remove('open')
+        })
+
+    })
 })

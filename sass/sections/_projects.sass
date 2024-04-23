@@ -39,6 +39,8 @@ section.projects
             pointer-events: none
             transition: all .3s
             height: auto !important
+            &.open
+                z-index: 1
 
         div.swiper-slide-visible
             opacity: 1
@@ -49,6 +51,37 @@ section.projects
             +screen(l)
                 margin-top: unset
     
+    div.swiper-slide
+        &:not(.swiper-slide-active):not(.swiper-slide-next)
+            &.open
+                div.project
+                    border-radius: 25px
+                    border-top-left-radius: unset
+                    border-bottom-left-radius: unset
+                    +screen(l)
+                        border-radius: 11px
+                        border-top-left-radius: unset
+                        border-bottom-left-radius: unset
+
+            div.additional
+                width: 100%
+                right: 100%
+                left: unset
+                box-shadow: -18px -6px 18px #021b3b1a, -22px -24px 32px #021b3b17, -50px -53px 44px #021b3b0d, -90px -94px 52px #021b3b03, -140px -147px 57px #021b3b00
+                border-radius: unset
+                border-top-left-radius: 25px
+                border-bottom-left-radius: 25px
+                +screen(l)
+                    border-top-left-radius: 11px
+                    border-bottom-left-radius: 11px
+                    padding: 10px
+
+                div.wrap
+                    border-left: unset
+                    padding-left: unset
+                    border-right: 1px solid #C1DBEE
+                    padding-right: 22px
+
     div.navigation
 
         div.swiper-scrollbar

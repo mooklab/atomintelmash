@@ -35,11 +35,9 @@ section.jobs
         +screen(l)
             padding-top: 40px
             padding-bottom: 63px
-            width: calc(100% + 80px)
         +screen(s)
             padding-top: 45px
             padding-bottom: 40px
-            width: calc(100% + 40px)
 
     div.title
         display: grid
@@ -81,7 +79,13 @@ section.jobs
     div.tabs
         display: flex
         flex-wrap: wrap
-        width: 100%
+        position: relative
+        +screen(l)
+            left: -40px
+            width: calc(100% + 80px)
+        +screen(s)
+            left: -20px
+            width: calc(100% + 40px)
 
     div.tabs_captions
         display: flex
@@ -93,6 +97,11 @@ section.jobs
             flex-wrap: unset
             overflow-x: scroll
             margin-bottom: 40px
+            padding-left: 40px
+            padding-right: 40px
+            +screen(s)
+                padding-left: 20px
+                padding-right: 20px
             &::-webkit-scrollbar
                 display: none
                 opacity: 0
@@ -117,10 +126,10 @@ section.jobs
             color: white
 
     div.tabs_contents
+        width: 100%
         +screen(l)
-            width: calc(100% - 80px)
-        +screen(s)
-            width: calc(100% - 40px)
+            padding-left: 40px
+            padding-right: 40px
 
     div.tab_content
         display: none
