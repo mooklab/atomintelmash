@@ -8,7 +8,7 @@ section.main {
     margin-bottom: 28px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.main {
     margin-top: 30px;
     margin-bottom: 24px;
@@ -25,7 +25,7 @@ section.main div.container {
     margin-bottom: 50px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.main div.container {
     grid-gap: 32px;
     margin-bottom: 210px;
@@ -44,7 +44,7 @@ section.main div.container h1 {
     line-height: 40px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.main div.container h1 {
     font-size: 20px;
     line-height: 26px;
@@ -65,7 +65,7 @@ section.main div.container span {
     padding: 13px 16px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.main div.container span {
     padding: 0px 11px;
   }
@@ -89,7 +89,7 @@ section.main div.activity {
     width: max-content;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.main div.activity {
     width: 100%;
     max-width: 340px;
@@ -108,7 +108,7 @@ section.main div.activity div.scroll {
     grid-gap: 5px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.main div.activity div.scroll {
     margin-bottom: 18px;
   }
@@ -123,7 +123,7 @@ section.main div.activity div.scroll img:first-child {
     height: 14px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.main div.activity div.scroll img:first-child {
     width: 20px;
     height: 20px;
@@ -134,7 +134,7 @@ section.main div.activity div.scroll img:first-child {
     height: 39px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.main div.activity div.scroll img:last-child {
     height: 14px;
   }
@@ -154,7 +154,7 @@ section.main div.activity h2 {
     margin-left: 30px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.main div.activity h2 {
     font-size: 16px;
     line-height: 20px;
@@ -191,7 +191,7 @@ section.main div.activity button {
     margin-left: 30px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.main div.activity button {
     grid-gap: 5px;
     padding: 11px 10px;
@@ -208,7 +208,7 @@ section.main div.activity button img {
     height: 23px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.main div.activity button img {
     width: 14px;
     height: 14px;
@@ -227,7 +227,7 @@ section.main div.background {
     margin-left: -410px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.main div.background {
     top: -48px;
     margin-left: -438px;
@@ -249,7 +249,7 @@ section.main div.background img.tablet {
     display: block;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.main div.background img.tablet {
     display: none;
   }
@@ -257,7 +257,7 @@ section.main div.background img.tablet {
 section.main div.background img.mobile {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.main div.background img.mobile {
     display: block;
   }
@@ -273,7 +273,7 @@ section.services {
     margin-bottom: 50px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.services {
     margin-top: 24px;
     margin-bottom: 24px;
@@ -282,7 +282,7 @@ section.services {
 section.services div.container {
   display: grid;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.services div.container {
     grid-gap: 20px;
   }
@@ -333,7 +333,7 @@ section.documents div.background {
     border-radius: 40px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.documents div.background {
     border-radius: 0px;
   }
@@ -361,10 +361,11 @@ section.documents div.container {
     grid-gap: 26px 64px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.documents div.container {
     padding-top: 40px;
     padding-bottom: 40px;
+    grid-gap: 20px;
   }
 }
 section.documents h2 {
@@ -381,7 +382,7 @@ section.documents h2 {
     line-height: 30px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.documents h2 {
     font-size: 16px;
     line-height: 22px;
@@ -428,6 +429,11 @@ section.documents div.tab_caption.opened {
 section.documents div.tabs_contents {
   grid-area: Contents;
 }
+@media (max-width: 767px) {
+  section.documents div.tabs_contents {
+    margin-top: 12px;
+  }
+}
 section.documents div.tab_content {
   display: none;
   grid-gap: 43px;
@@ -438,7 +444,7 @@ section.documents div.tab_content {
     grid-gap: 32px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.documents div.tab_content {
     grid-gap: 20px;
   }
@@ -467,18 +473,18 @@ section.documents div.navigation div.swiper-navigation div.arrow:hover svg path 
 }
 
 section.projects {
-  margin-top: 100px;
+  margin-top: 88px;
   margin-bottom: 88px;
 }
 @media (max-width: 1280px) {
   section.projects {
-    margin-top: 75px;
-    margin-bottom: 75px;
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.projects {
-    margin-top: 50px;
+    margin-top: 47px;
     margin-bottom: 35px;
   }
 }
@@ -489,7 +495,7 @@ section.projects div.container {
 section.projects h2 {
   font-weight: 700;
   font-size: 50px;
-  line-height: 56px;
+  line-height: 64px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
@@ -499,7 +505,7 @@ section.projects h2 {
     line-height: 26px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.projects h2 {
     font-size: 16px;
     line-height: 19px;
@@ -509,7 +515,7 @@ section.projects div.swiper {
   width: 100%;
   min-width: 0;
   overflow: visible;
-  margin-top: 56px;
+  margin-top: 40px;
 }
 @media (max-width: 1280px) {
   section.projects div.swiper {
@@ -553,9 +559,9 @@ section.projects div.navigation div.swiper-navigation div.arrow:hover svg path {
 }
 section.projects div.background {
   position: absolute;
-  top: -390px;
+  top: -379px;
   left: 50%;
-  margin-left: -952px;
+  margin-left: -928px;
   z-index: -1;
 }
 @media (max-width: 1280px) {
@@ -564,10 +570,10 @@ section.projects div.background {
     margin-left: -457px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.projects div.background {
-    top: -140px;
-    margin-left: -410px;
+    top: -146px;
+    margin-left: -411px;
   }
 }
 section.projects div.background img.desktop {
@@ -586,7 +592,7 @@ section.projects div.background img.tablet {
     display: block;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.projects div.background img.tablet {
     display: none;
   }
@@ -594,23 +600,23 @@ section.projects div.background img.tablet {
 section.projects div.background img.mobile {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.projects div.background img.mobile {
     display: block;
   }
 }
 
 section.about {
-  height: 1080px;
+  height: 1150px;
 }
 @media (max-width: 1280px) {
   section.about {
     font-size: 12px;
     line-height: 1.3em;
-    height: 600px;
+    height: 595px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.about {
     height: -webkit-max-content;
     height: -moz-max-content;
@@ -621,7 +627,7 @@ section.about {
 section.about div.container {
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.about div.container {
     display: grid;
   }
@@ -638,37 +644,38 @@ section.about img.hand {
 }
 @media (max-width: 1280px) {
   section.about img.hand {
-    top: -60px;
-    max-width: 640px;
+    top: -16px;
+    width: 500px;
+    left: calc(50% + 38px);
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.about img.hand {
     top: -25px;
   }
 }
 section.about div.description {
   position: absolute;
-  top: 350px;
-  left: 250px;
+  top: 392px;
+  left: 260px;
   max-width: 440px;
   display: grid;
-  grid-gap: 50px;
+  grid-gap: 34px;
 }
 @media (max-width: 1280px) {
   section.about div.description {
-    top: 160px;
+    top: 172px;
     left: 38px;
     max-width: 320px;
-    grid-gap: 24px;
+    grid-gap: 14px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.about div.description {
     top: 0px;
     left: 0px;
     position: relative;
-    margin-top: 110px;
+    margin-top: 163px;
     margin-bottom: 32px;
   }
 }
@@ -686,7 +693,7 @@ section.about div.description h3 {
     line-height: 30px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.about div.description h3 {
     font-size: 16px;
     line-height: 22px;
@@ -697,26 +704,27 @@ section.about div.description span {
 }
 section.about div.years {
   position: absolute;
-  top: 500px;
-  left: calc(50% + 100px);
+  top: 510px;
+  left: calc(50% + 73px);
   width: 540px;
   display: grid;
   z-index: 1;
+  padding-top: 36px;
 }
 @media (max-width: 1280px) {
   section.about div.years {
-    top: 250px;
-    left: calc(50% - 30px);
+    top: 278px;
+    left: calc(50% - 13px);
     width: 340px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.about div.years {
     top: 0;
     left: 0;
     position: relative;
     width: 100%;
-    padding-top: 46px;
+    padding-top: 41px;
     padding-bottom: 28px;
   }
 }
@@ -732,24 +740,44 @@ section.about div.years h3 {
   text-align: center;
   text-transform: uppercase;
   color: #333333;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 @media (max-width: 1280px) {
   section.about div.years h3 {
     font-size: 24px;
     line-height: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
 }
 section.about div.years div.swiper {
   width: 100%;
   min-width: 0;
   text-align: center;
+  overflow: visible;
+}
+@media (max-width: 1280px) {
+  section.about div.years div.swiper {
+    overflow: hidden;
+  }
+}
+section.about div.years div.swiper-slide:first-child span {
+  position: relative;
+  display: block;
+  width: 486px !important;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+@media (max-width: 1280px) {
+  section.about div.years div.swiper-slide:first-child span {
+    width: 100% !important;
+  }
 }
 section.about div.years div.navigation {
   justify-self: center;
   grid-template-columns: 1fr;
-  margin-top: 24px;
+  margin-top: 11px;
 }
 section.about div.years span {
   text-align: center;
@@ -776,9 +804,10 @@ section.about div.years::after {
   section.about div.years::after {
     width: 300px;
     height: 300px;
+    border-radius: 10px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.about div.years::after {
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -801,7 +830,7 @@ section.missions div.background {
   grid-column: breakout;
   position: absolute;
   top: 0;
-  left: -120px;
+  left: 0;
   width: calc(100% + 260px + 120px);
   height: 100%;
   background-color: #035EA1;
@@ -815,7 +844,7 @@ section.missions div.background {
     border-radius: 40px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.missions div.background {
     left: -20px;
     width: calc(100% + 40px);
@@ -835,7 +864,7 @@ section.missions div.container {
     padding-bottom: 30px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.missions div.container {
     padding-top: 60px;
     padding-bottom: 33px;
@@ -869,16 +898,18 @@ section.missions small {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #2d84c4;
-  margin-bottom: 19px;
+  margin-bottom: 10px;
+  margin-top: 60px;
 }
 @media (max-width: 1280px) {
   section.missions small {
     font-size: 12px;
     line-height: 16px;
     margin-bottom: 10px;
+    margin-top: unset;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.missions small {
     margin-bottom: 8px;
   }
@@ -890,7 +921,7 @@ section.missions h2 {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: white;
-  margin-bottom: 42px;
+  margin-bottom: 24px;
 }
 @media (max-width: 1280px) {
   section.missions h2 {
@@ -899,7 +930,7 @@ section.missions h2 {
     margin-bottom: 16px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.missions h2 {
     font-size: 16px;
     margin-bottom: 12px;
@@ -919,6 +950,11 @@ section.missions ul li {
   padding-left: 18px;
   color: #5e8fd1;
 }
+@media (max-width: 1280px) {
+  section.missions ul li {
+    padding-left: 9px;
+  }
+}
 section.missions ul li::before {
   content: "";
   position: absolute;
@@ -930,6 +966,13 @@ section.missions ul li::before {
   background-color: #F36B2D;
   border-radius: 7px;
 }
+@media (max-width: 1280px) {
+  section.missions ul li::before {
+    top: 6px;
+    width: 3px;
+    height: 3px;
+  }
+}
 
 section.advantages {
   margin-top: 100px;
@@ -938,10 +981,10 @@ section.advantages {
 @media (max-width: 1280px) {
   section.advantages {
     margin-top: 80px;
-    margin-bottom: 60px;
+    margin-bottom: 61px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.advantages {
     margin-top: 50px;
     margin-bottom: 35px;
@@ -970,7 +1013,7 @@ section.advantages h2 {
     line-height: 26px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.advantages h2 {
     font-size: 16px;
     line-height: 26px;
@@ -980,6 +1023,17 @@ section.advantages div.swiper {
   width: 100%;
   min-width: 0;
   overflow: visible;
+}
+section.advantages div.swiper-slide {
+  height: auto !important;
+}
+section.advantages div.navigation {
+  display: none;
+}
+@media (max-width: 767px) {
+  section.advantages div.navigation {
+    display: grid;
+  }
 }
 section.advantages div.background {
   position: absolute;
@@ -994,7 +1048,7 @@ section.advantages div.background {
     margin-left: -670px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.advantages div.background {
     top: -540px;
     margin-left: -390px;
@@ -1016,7 +1070,7 @@ section.advantages div.background img.tablet {
     display: block;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.advantages div.background img.tablet {
     display: none;
   }
@@ -1024,7 +1078,7 @@ section.advantages div.background img.tablet {
 section.advantages div.background img.mobile {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.advantages div.background img.mobile {
     display: block;
   }
@@ -1041,7 +1095,7 @@ section.supplier div.container {
     line-height: 1.3em;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.supplier div.container {
     grid-template-columns: 1fr;
   }
@@ -1055,7 +1109,7 @@ section.supplier div.container img.blank {
     justify-self: center;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.supplier div.container img.blank {
     display: none;
   }
@@ -1077,7 +1131,7 @@ section.supplier div.container div.text h2 {
     line-height: 26px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.supplier div.container div.text h2 {
     font-size: 16px;
   }
@@ -1149,7 +1203,7 @@ section.news {
     margin-bottom: 80px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.news {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -1178,7 +1232,7 @@ section.news h2 {
     line-height: 26px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.news h2 {
     font-size: 16px;
   }
@@ -1196,10 +1250,10 @@ section.jobs {
 @media (max-width: 1280px) {
   section.jobs {
     margin-top: 80px;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.jobs {
     margin-top: 50px;
   }
@@ -1212,7 +1266,7 @@ section.jobs div.background {
   height: 100%;
   background-color: #003274;
   border-radius: 100px;
-  z-index: -1;
+  z-index: -9;
 }
 @media (max-width: 1280px) {
   section.jobs div.background {
@@ -1221,9 +1275,12 @@ section.jobs div.background {
     border-radius: 40px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.jobs div.background {
-    border-radius: 0px;
+    left: -20px;
+    width: calc(100% + 40px);
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
   }
 }
 section.jobs div.container {
@@ -1231,6 +1288,7 @@ section.jobs div.container {
   color: white;
   padding-top: 73px;
   padding-bottom: 70px;
+  overflow: visible;
 }
 @media (max-width: 1280px) {
   section.jobs div.container {
@@ -1238,7 +1296,7 @@ section.jobs div.container {
     padding-bottom: 63px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.jobs div.container {
     padding-top: 45px;
     padding-bottom: 40px;
@@ -1267,7 +1325,7 @@ section.jobs div.title h2 {
     line-height: 30px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.jobs div.title h2 {
     font-size: 16px;
     line-height: 22px;
@@ -1284,7 +1342,14 @@ section.jobs div.title a {
   text-transform: uppercase;
   color: white;
 }
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
+  section.jobs div.title a {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 10px 24px;
+  }
+}
+@media (max-width: 767px) {
   section.jobs div.title a {
     display: none;
   }
@@ -1308,11 +1373,10 @@ section.jobs div.tabs_captions {
 }
 @media (max-width: 1280px) {
   section.jobs div.tabs_captions {
-    margin-bottom: 40px;
     gap: 15px;
     -ms-flex-wrap: unset;
         flex-wrap: unset;
-    overflow-x: scroll;
+    margin-bottom: 40px;
   }
   section.jobs div.tabs_captions::-webkit-scrollbar {
     display: none;
@@ -1364,7 +1428,7 @@ section.jobs div.tab_content h3 {
     line-height: 23px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.jobs div.tab_content h3 {
     font-size: 14px;
     line-height: 23px;
@@ -1382,7 +1446,7 @@ section.jobs div.tab_content div.list {
     grid-gap: 0 16px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.jobs div.tab_content div.list {
     grid-template-columns: 1fr;
     grid-gap: unset;
@@ -1403,7 +1467,7 @@ section.jobs div.question {
     margin-top: 46px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.jobs div.question {
     grid-template-areas: "Title" "Text" "Contacts";
     margin-top: 32px;
@@ -1434,17 +1498,20 @@ section.jobs div.question div a {
 section.jobs div.question div a:hover {
   text-decoration: none;
 }
+section.jobs div.question div a.phone {
+  text-decoration: none;
+}
 
 section.personal div.container {
   display: grid;
-  grid-gap: 60px;
+  grid-gap: 50px;
 }
 @media (max-width: 1280px) {
   section.personal div.container {
-    grid-gap: 16px;
+    grid-gap: 12px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.personal div.container {
     grid-gap: 24px;
   }
@@ -1463,7 +1530,7 @@ section.personal h2 {
     line-height: 26px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.personal h2 {
     font-size: 16px;
     line-height: 28px;
@@ -1473,6 +1540,14 @@ section.personal div.swiper {
   width: 100%;
   min-width: 0;
   overflow: visible;
+}
+section.personal div.navigation {
+  display: none;
+}
+@media (max-width: 767px) {
+  section.personal div.navigation {
+    display: grid;
+  }
 }
 section.personal div.navigation div.swiper-navigation div.arrow {
   border-color: white;
@@ -1485,16 +1560,16 @@ section.personal div.navigation div.swiper-navigation div.arrow:hover svg path {
 }
 
 section.contacts {
-  margin-top: 92px;
+  margin-top: 90px;
   margin-bottom: 169px;
 }
 @media (max-width: 1280px) {
   section.contacts {
-    margin-top: 80px;
+    margin-top: 75px;
     margin-bottom: 60px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.contacts {
     margin-top: 40px;
     margin-bottom: 70px;
@@ -1508,7 +1583,7 @@ section.contacts div.container {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.contacts div.container {
     grid-template-columns: 1fr;
   }
@@ -1518,7 +1593,7 @@ section.contacts div.image {
   width: 100%;
   height: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.contacts div.image {
     width: 100%;
     aspect-ratio: 14/9;
@@ -1528,14 +1603,20 @@ section.contacts div.image {
 }
 section.contacts div.image img {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  top: -9px;
+  left: -66px;
+  width: 106%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
+}
+@media (max-width: 1280px) {
+  section.contacts div.image img {
+    top: -19px;
+    left: -34px;
+  }
 }
 section.contacts div.text {
   max-width: 474px;
@@ -1544,6 +1625,7 @@ section.contacts div.text {
 @media (max-width: 1280px) {
   section.contacts div.text {
     margin-left: unset;
+    max-width: 245px;
   }
 }
 section.contacts div.text h2 {
@@ -1552,16 +1634,17 @@ section.contacts div.text h2 {
   line-height: 1.3;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  margin-bottom: 64px;
+  margin-bottom: 50px;
+  color: black;
 }
 @media (max-width: 1280px) {
   section.contacts div.text h2 {
     font-size: 24px;
     line-height: 26px;
-    margin-bottom: 34px;
+    margin-bottom: 30px;
   }
 }
-@media (max-width: 1280px) {
+@media (max-width: 767px) {
   section.contacts div.text h2 {
     font-size: 16px;
     line-height: 26px;
@@ -1575,10 +1658,10 @@ section.contacts div.text div.contacts {
 }
 @media (max-width: 1280px) {
   section.contacts div.text div.contacts {
-    grid-gap: 12px;
+    grid-gap: 2px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.contacts div.text div.contacts {
     grid-gap: 10px;
   }
@@ -1598,7 +1681,7 @@ section.contacts div.text div.contacts a.phone {
     line-height: 12px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.contacts div.text div.contacts a.phone {
     font-size: 14px;
     line-height: 12px;
@@ -1632,7 +1715,8 @@ section.contacts div.text div.adress {
 }
 @media (max-width: 1280px) {
   section.contacts div.text div.adress {
-    grid-gap: 11px;
+    grid-gap: 6px;
+    max-width: 230px;
   }
 }
 section.contacts div.text div.adress strong {
@@ -1669,8 +1753,8 @@ section.contacts div.text div.small_divide {
 }
 @media (max-width: 1280px) {
   section.contacts div.text div.small_divide {
-    margin-top: 24px;
-    margin-bottom: 20px;
+    margin-top: 22px;
+    margin-bottom: 16px;
     width: 22px;
   }
 }
@@ -1683,8 +1767,8 @@ section.contacts div.text div.big_divide {
 }
 @media (max-width: 1280px) {
   section.contacts div.text div.big_divide {
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 14px;
+    margin-bottom: 13px;
     max-width: 245px;
   }
 }/*# sourceMappingURL=index.css.map */

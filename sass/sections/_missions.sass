@@ -8,7 +8,7 @@ section.missions
         grid-column: breakout
         position: absolute
         top: 0
-        left: -120px
+        left: 0
         width: calc(100% + 260px + 120px)
         height: 100%
         background-color: #035EA1
@@ -57,11 +57,13 @@ section.missions
         letter-spacing: 0.02em
         text-transform: uppercase
         color: #2d84c4
-        margin-bottom: 19px
+        margin-bottom: 10px
+        margin-top: 60px
         +screen(l)
             font-size: 12px
             line-height: 16px
             margin-bottom: 10px
+            margin-top: unset
         +screen(s)
             margin-bottom: 8px
 
@@ -72,7 +74,7 @@ section.missions
         letter-spacing: 0.02em
         text-transform: uppercase
         color: white
-        margin-bottom: 42px
+        margin-bottom: 24px
         +screen(l)
             font-size: 24px
             line-height: 26px
@@ -93,6 +95,8 @@ section.missions
             position: relative
             padding-left: 18px
             color: #5e8fd1
+            +screen(l)
+                padding-left: 9px
             &::before
                 content: ''
                 position: absolute
@@ -103,3 +107,7 @@ section.missions
                 height: 7px
                 background-color: #F36B2D
                 border-radius: 7px
+                +screen(l)
+                    top: 6px
+                    width: 3px
+                    height: 3px

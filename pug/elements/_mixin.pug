@@ -23,7 +23,7 @@ mixin project(title, image, text)
                 include ../../images/icons/project_arrow.svg
 
 mixin document(title, text, format)
-    div.document
+    a(href="###").document
         div.title
             img(src="images/icons/document.svg", alt="")
             strong= title
@@ -31,11 +31,13 @@ mixin document(title, text, format)
             span= text
             small= format
 
-mixin advantage(color, icon, title, text)
+mixin advantage(color, icon, title, text, more=false)
     div(class=color).advantage
         img(src=icon, alt="")
         h3= title
         span= text
+        if block
+            block
 
 mixin job(title, company='ООО «АтомИнтелМаш»', link='https://hh.ru/')
     a(href=link).job

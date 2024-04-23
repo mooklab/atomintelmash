@@ -1,8 +1,8 @@
 section.contacts
-    margin-top: 92px
+    margin-top: 90px
     margin-bottom: 169px
     +screen(l)
-        margin-top: 80px
+        margin-top: 75px
         margin-bottom: 60px
     +screen(s)
         margin-top: 40px
@@ -28,18 +28,22 @@ section.contacts
 
         img
             position: absolute
-            top: 0
-            left: 0
-            width: 100%
+            top: -9px
+            left: -66px
+            width: 106%
             height: 100%
             object-fit: cover
             object-position: center center
+            +screen(l)
+                top: -19px
+                left: -34px
 
     div.text
         max-width: 474px
         margin-left: 110px
         +screen(l)
             margin-left: unset
+            max-width: 245px
 
         h2
             font-weight: 700
@@ -47,12 +51,13 @@ section.contacts
             line-height: 1.3
             letter-spacing: 0.02em
             text-transform: uppercase
-            margin-bottom: 64px
+            margin-bottom: 50px
+            color: black
             +screen(l)
                 font-size: 24px
                 line-height: 26px
-                margin-bottom: 34px
-            +screen(l)
+                margin-bottom: 30px
+            +screen(s)
                 font-size: 16px
                 line-height: 26px
                 margin-bottom: 19px
@@ -62,7 +67,7 @@ section.contacts
             justify-items: start
             grid-gap: 20px
             +screen(l)
-                grid-gap: 12px
+                grid-gap: 2px
             +screen(s)
                 grid-gap: 10px
 
@@ -104,7 +109,8 @@ section.contacts
             display: grid
             grid-gap: 20px
             +screen(l)
-                grid-gap: 11px
+                grid-gap: 6px
+                max-width: 230px
 
             strong
                 display: block
@@ -125,7 +131,6 @@ section.contacts
                     font-size: 12px
                     line-height: 12px
 
-
         div.small_divide
             width: 40px
             height: 1px
@@ -133,8 +138,8 @@ section.contacts
             margin-top: 42px
             margin-bottom: 34px
             +screen(l)
-                margin-top: 24px
-                margin-bottom: 20px
+                margin-top: 22px
+                margin-bottom: 16px
                 width: 22px
 
         div.big_divide
@@ -144,6 +149,6 @@ section.contacts
             margin-top: 42px
             margin-bottom: 42px
             +screen(l)
-                margin-top: 16px
-                margin-bottom: 16px
+                margin-top: 14px
+                margin-bottom: 13px
                 max-width: 245px

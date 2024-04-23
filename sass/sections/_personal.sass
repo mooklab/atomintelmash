@@ -2,9 +2,9 @@ section.personal
 
     div.container
         display: grid
-        grid-gap: 60px
+        grid-gap: 50px
         +screen(l)
-            grid-gap: 16px
+            grid-gap: 12px
         +screen(s)
             grid-gap: 24px
 
@@ -28,6 +28,9 @@ section.personal
         overflow: visible
 
     div.navigation
+        display: none
+        +screen(s)
+            display: grid
         div.swiper-navigation
             div.arrow
                 border-color: white

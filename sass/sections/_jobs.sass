@@ -1,9 +1,10 @@
 section.jobs
     margin-top: 100px
     margin-bottom: 100px
+    
     +screen(l)
         margin-top: 80px
-        margin-bottom: 50px
+        margin-bottom: 44px
     +screen(s)
         margin-top: 50px
 
@@ -15,19 +16,23 @@ section.jobs
         height: 100%
         background-color: #003274
         border-radius: 100px
-        z-index: -1
+        z-index: -9
         +screen(l)
             left: -40px
             width: calc(100% + 40px + 80px)
             border-radius: 40px
         +screen(s)
-            border-radius: 0px
+            left: -20px
+            width: calc(100% + 40px)
+            border-top-right-radius: unset
+            border-bottom-right-radius: unset
 
     div.container
         position: relative
         color: white
         padding-top: 73px
         padding-bottom: 70px
+        overflow: visible
         +screen(l)
             padding-top: 40px
             padding-bottom: 63px
@@ -65,6 +70,10 @@ section.jobs
             letter-spacing: 0.02em
             text-transform: uppercase
             color: white
+            +screen(l)
+                font-size: 12px
+                line-height: 16px
+                padding: 10px 24px
             +screen(s)
                 display: none
 
@@ -79,10 +88,10 @@ section.jobs
         gap: 20px 10px
         margin-bottom: 60px
         +screen(l)
-            margin-bottom: 40px
             gap: 15px
             flex-wrap: unset
-            overflow-x: scroll
+            // overflow-x: scroll
+            margin-bottom: 40px
             &::-webkit-scrollbar
                 display: none
                 opacity: 0
@@ -175,4 +184,6 @@ section.jobs
             a
                 text-decoration: underline
                 &:hover
+                    text-decoration: none
+                &.phone
                     text-decoration: none

@@ -10,6 +10,7 @@ documentsSliders.forEach( documentSlider => {
     
     new Swiper(documentSlider, {
         slidesPerView: 2,
+        spaceBetween: 10,
         observer: true,
         observeParents: true,
         scrollbar: {
@@ -133,7 +134,7 @@ new Swiper( aboutSlider, {
     breakpoints: {
         1280: {
             slidesPerView: 1,
-            spaceBetween: 56,
+            spaceBetween: 34,
             grid: {
                 rows: 2,
                 fill: 'row'
@@ -147,6 +148,7 @@ new Swiper( advantagesSlider, {
     spaceBetween: 15,
     grid: false,
     watchSlidesProgress: true,
+    autoHeight: true,
     scrollbar: {
         el: advantagesSlider.parentNode.querySelector('div.swiper-scrollbar')
     },
@@ -158,6 +160,7 @@ new Swiper( advantagesSlider, {
         1280: {
             slidesPerView: 3,
             spaceBetween: 20,
+            autoHeight: false,
             grid: {
                 rows: 2,
                 fill: 'row'
@@ -166,6 +169,7 @@ new Swiper( advantagesSlider, {
         768: {
             slidesPerView: 2,
             spaceBetween: 20,
+            autoHeight: false,
             grid: {
                 rows: 3,
                 fill: 'row'

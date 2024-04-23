@@ -91,6 +91,7 @@ footer
                         overflow: visible
 
                 button
+                    cursor: pointer
                     background-color: #fd6925
                     padding: 15px 24px
                     border-radius: 999px
@@ -101,6 +102,8 @@ footer
                     color: white
                     +screen(l)
                         justify-self: start
+                        font-size: 12px
+                        line-height: 8px
 
     div.bottom
         display: grid
@@ -118,14 +121,24 @@ footer
             grid-template-columns: 1fr
             grid-gap: 10px
 
+        a.policy
+            +screen(s)
+                order: 2
+
+        span.copyright
+            +screen(s)
+                order: 1
+
         a.developed
             display: grid
             align-items: center
             justify-content: end
             grid-template-columns: repeat(2, max-content)
             grid-gap: 12px
+            font-size: 12px
             +screen(s)
                 justify-content: start
+                order: 3
     
     div.background
         position: absolute
@@ -134,7 +147,8 @@ footer
         margin-left: -1500px
         z-index: -2
         +screen(l)
-            margin-left: -620px
+            margin-left: -597px
+            bottom: 5px
         +screen(s)
             margin-left: -360px
             bottom: 350px

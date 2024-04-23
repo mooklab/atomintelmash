@@ -3,7 +3,7 @@ section.advantages
     margin-bottom: 210px
     +screen(l)
         margin-top: 80px
-        margin-bottom: 60px
+        margin-bottom: 61px
     +screen(s)
         margin-top: 50px
         margin-bottom: 35px
@@ -32,6 +32,14 @@ section.advantages
         width: 100%
         min-width: 0
         overflow: visible
+
+    div.swiper-slide
+        height: auto !important
+
+    div.navigation
+        display: none
+        +screen(s)
+            display: grid
 
     div.background
         position: absolute

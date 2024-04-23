@@ -20,11 +20,11 @@ div.person
 
     div.text
         display: grid
-        padding: 30px 20px
+        padding: 21px 20px
         padding-bottom: 50px
         +screen(l)
-            padding: 12px 10px
-            padding-bottom: 18px
+            padding: 8px 10px
+            padding-bottom: 12px
 
         strong
             font-size: 20px
@@ -40,11 +40,11 @@ div.person
                 width: 50px
                 height: 1px
                 background-color: #025EA1
-                margin-top: 20px
-                margin-bottom: 30px
+                margin-top: 15px
+                margin-bottom: 25px
                 +screen(l)
-                    margin-top: 10px
-                    margin-bottom: 10px
+                    margin-top: 5px
+                    margin-bottom: 7px
                     width: 22px
 
         span
@@ -108,6 +108,7 @@ div.service
                 +screen(l)
                     margin-top: 16px
                     margin-bottom: 20px
+                    width: 22px
                 +screen(s)
                     margin-top: 20px
                     margin-bottom: 16px
@@ -128,6 +129,9 @@ div.project
     +screen(l)
         border-radius: 11px
         height: 100%
+    +screen(s)
+        display: grid
+        grid-template-rows: max-content 1fr
 
     img
         width: 100%
@@ -139,11 +143,15 @@ div.project
 
     div.text
         color: #818d9c
-        padding: 40px 20px 64px
+        padding: 35px 20px 55px
         +screen(l)
             font-size: 12px
             line-height: 1.3em
             padding: 20px 10px
+        +screen(s)
+            display: grid
+            grid-template-rows: max-content max-content 1fr
+            padding-bottom: 10px
 
         & > *
             max-width: 420px
@@ -167,14 +175,15 @@ div.project
                 width: 50px
                 height: 1px
                 background-color: #6cace4
-                margin-top: 35px
-                margin-bottom: 25px
+                margin-top: 27px
+                margin-bottom: 20px
                 +screen(l)
                     margin-top: 16px
                     margin-bottom: 20px
+                    width: 22px
                 +screen(s)
-                    margin-top: 20px
-                    margin-bottom: 16px
+                    margin-top: 13px
+                    margin-bottom: 13px
 
         span
             +screen(l)
@@ -185,11 +194,14 @@ div.project
                 text-overflow: ellipsis
 
         div.arrow
-            margin-top: 32px
+            margin-top: 14px
             +screen(s)
-                margin-top: 28px
+                margin-top: 19px
+                align-self: end
+                svg
+                    width: 20px
 
-div.document
+a.document
     display: grid
     grid-gap: 20px
     +screen(l)
@@ -263,6 +275,10 @@ div.navigation
     align-items: center
     grid-template-columns: 1fr max-content
     grid-gap: 38px
+    +screen(l)
+        grid-gap: 14px
+    +screen(s)
+        grid-gap: 10px
 
     div.swiper-scrollbar
         position: static
@@ -358,6 +374,7 @@ div.news
         small
             color: #9caebb
             margin-bottom: 30px
+            font-size: 16px
             +screen(l)
                 font-size: 12px
                 line-height: 1.3em
@@ -427,6 +444,7 @@ div.news
 div.advantage
     border-radius: 25px
     padding: 30px 35px
+    padding-bottom: 64px
     box-shadow: $shadow
     height: 100%
     +screen(l)
@@ -434,6 +452,8 @@ div.advantage
         padding-bottom: 44px
         font-size: 12px
         line-height: 1.3em
+    +screen(s)
+        height: auto
 
     &.dark
         background-color: #003274
@@ -483,20 +503,52 @@ div.advantage
                 margin-top: 20px
                 margin-bottom: 24px
                 width: 22px
+        
+    div.accordion
+        div.accordion_caption
+            cursor: pointer
+            display: grid
+            align-items: center
+            grid-template-columns: max-content max-content
+            grid-gap: 5px
+            color: #1E6FB7
+            margin-top: 20px
+            +screen(s)
+                display: none
+
+            svg
+                transition: .2s all
+            
+            span
+                +screen(l)
+                    display: none !important
+            span.show
+                display: block
+            span.hide
+                display: none
+        div.accordion_content
+            +screen(s)
+                grid-template-rows: 1fr !important
+        &.open
+            div.accordion_caption
+                span.hide
+                    display: block
+                span.show
+                    display: none
+                svg
+                    transform: scaleX(-1)
 
 a.job
     position: relative
     display: grid
-    grid-gap: 11px
-    border-top: 1px solid white
-    border-bottom: 1px solid white
+    border-top: 1px solid #6684AC
+    border-bottom: 1px solid #6684AC
     padding-top: 26px
     padding-bottom: 23px
     margin-top: -1px
     +screen(l)
         padding-top: 16px
         padding-bottom: 16px
-        grid-gap: 9px
 
     strong
         font-weight: 400
@@ -515,11 +567,15 @@ a.job
         content: ''
         display: block
         position: absolute
-        top: 20px
+        top: 35px
         right: 0
         width: 10px
         height: 10px
         background-image: url(../images/icons/arrow_job.svg)
         background-repeat: no-repeat
         background-size: contain
+        +screen(l)
+            top: 21px
+            width: 7px
+            height: 7px
 
