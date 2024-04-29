@@ -611,7 +611,8 @@ section.projects div.background {
 @media (max-width: 767px) {
   section.projects div.background {
     top: -146px;
-    margin-left: -411px;
+    left: 0;
+    margin-left: -330px;
   }
 }
 section.projects div.background img.desktop {
@@ -695,15 +696,19 @@ section.about img.hand {
 section.about div.description {
   position: absolute;
   top: 392px;
-  left: 260px;
+  left: 50%;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+  margin-left: -70px;
   max-width: 440px;
   display: grid;
   grid-gap: 34px;
 }
 @media (max-width: 1280px) {
   section.about div.description {
-    top: 172px;
-    left: 38px;
+    top: 140px;
+    margin-left: 0px;
     max-width: 320px;
     grid-gap: 14px;
   }
@@ -712,6 +717,9 @@ section.about div.description {
   section.about div.description {
     top: 0px;
     left: 0px;
+    -webkit-transform: unset;
+        -ms-transform: unset;
+            transform: unset;
     position: relative;
     margin-top: 163px;
     margin-bottom: 32px;

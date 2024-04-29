@@ -30,18 +30,21 @@ section.about
     div.description
         position: absolute
         top: 392px
-        left: 260px
+        left: 50%
+        transform: translateX(-100%)
+        margin-left: -70px
         max-width: 440px
         display: grid
         grid-gap: 34px
         +screen(l)
-            top: 172px
-            left: 38px
+            top: 140px
+            margin-left: 0px
             max-width: 320px
             grid-gap: 14px
         +screen(s)
             top: 0px
             left: 0px
+            transform: unset
             position: relative
             margin-top: 163px
             margin-bottom: 32px
